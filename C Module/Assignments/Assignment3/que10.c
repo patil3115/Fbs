@@ -2,32 +2,18 @@
 
 int main()
 {
-	int no;
+	int no,sum;
 	printf("Enter no: ");
 	scanf("%d",&no);
 	
-	int n;
-	printf("Enter no of digits from first and last to add: ");
-	scanf("%d",&n);
+	int last=no%10;    //last integer
 	
-	if(no/n>=2)
-	{	int x=1,i=1;
-		
-		while(i<=n)
-		{
-			x=x*10;
-			i++;
-		}
-		
-		int ld=no%x;
-		
-		while(no>x)
-		{
-			no=no/10;
-		}
-	}
-	else
+	while(no>=10)      //loop will continue till no is greater that 10 is exit we get only one digit standing first 
 	{
-		printf("invalid no of digits");
+		no=no/10;     //first digit
 	}
+	
+	sum=last+no;
+	
+	printf("%d (%d + %d)",sum,no,last);
 }
