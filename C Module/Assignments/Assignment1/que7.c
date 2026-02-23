@@ -15,7 +15,7 @@ int main()
 		ta=basic*0.20;
 		hra=basic*0.25;
 		
-		salary=da+ta+hra;
+		salary=basic+da+ta+hra;
 		
 		printf("da=%.3lf\nta=%.3lf\nhra=%.3lf \n",da,ta,hra);
 		printf("Total Salary is %.3lf \n",salary);
@@ -26,7 +26,7 @@ int main()
 		ta=basic*0.25;
 		hra=basic*0.30;
 		
-		salary=da+ta+hra;
+		salary=basic+da+ta+hra;
 		
 		printf("da=%.3lf\nta=%.3lf\nhra=%.3lf \n",da,ta,hra);
 		printf("Total Salary is %.3lf \n",salary);
@@ -34,3 +34,4 @@ int main()
 	
 	return 0;
 }
+
